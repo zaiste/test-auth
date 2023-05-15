@@ -1,0 +1,14 @@
+query FetchProducts($channel: String!, $first: Int!) {
+  products(first: $first, channel: $channel) {
+    edges {
+      node {
+        id
+        name
+        media {
+          url
+          alt
+        }
+      }
+    }
+  }
+}

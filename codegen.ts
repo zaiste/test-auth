@@ -6,7 +6,7 @@ const config: CodegenConfig = {
   schema: "https://zaiste.staging.saleor.cloud/graphql/",
   documents: "graphql/**/*.graphql",
   generates: {
-    generated: {
+    "generated/": {
       preset: "client",
       plugins: []
     }
