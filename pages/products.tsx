@@ -1,10 +1,9 @@
-import { FetchProductsDocument, FetchProductsQuery, Product } from '@/generated/graphql';
+import { FetchProductsDocument } from '@/generated/graphql';
 import { useQuery } from '@apollo/client';
-import Link from 'next/link';
 import Image from 'next/image'
 
 export default function ProductsPage() {
-  const { data, loading } = useQuery<FetchProductsQuery>(FetchProductsDocument, { variables: { first: 8, channel: "default-channel" } })
+  const { data, loading } = useQuery(FetchProductsDocument, { variables: { first: 8, channel: "default-channel" } })
 
   return (
     <main className={`flex min-h-screen flex-col items-center p-24`}>
@@ -24,7 +23,6 @@ export default function ProductsPage() {
               <div
                 className="group rounded-lg border border-transparent px-5 py-4"
               >
-
                 <h2 className={`text-2xl font-semibold`}>
                   {edge.node.name}
                 </h2>
