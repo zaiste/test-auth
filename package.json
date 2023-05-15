@@ -10,6 +10,7 @@
     "codegen": "graphql-codegen --config codegen.ts"
   },
   "dependencies": {
+    "@apollo/client": "^3.7.14",
     "@types/node": "20.1.4",
     "@types/react": "18.2.6",
     "@types/react-dom": "18.2.4",
@@ -25,7 +26,7 @@
   },
   "devDependencies": {
     "@graphql-codegen/cli": "3.3.1",
-    "typescript": "5.0.4",
-    "@graphql-codegen/client-preset": "3.0.1"
+    "@graphql-codegen/client-preset": "3.0.1",
+    "typescript": "5.0.4"
   }
 }

@@ -4,7 +4,8 @@ query FetchProducts($channel: String!, $first: Int!) {
       node {
         id
         name
-        media {
+        description
+        thumbnail {
           url
           alt
         }
