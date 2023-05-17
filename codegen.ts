@@ -1,9 +1,11 @@
 
 import type { CodegenConfig } from '@graphql-codegen/cli';
 
+import * as Constant from "./lib/constant";
+
 const config: CodegenConfig = {
   overwrite: true,
-  schema: "https://zaiste.staging.saleor.cloud/graphql/",
+  schema: Constant.SaleorURL,
   documents: "graphql/**/*.graphql",
   generates: {
     "generated/": {

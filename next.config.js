@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ['zaiste.staging.saleor.cloud'],
+    domains: ['vercel.saleor.cloud'],
   }
 }
 

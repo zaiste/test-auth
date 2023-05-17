@@ -1,0 +1,1 @@
+export const SaleorURL = "https://vercel.saleor.cloud/graphql/";

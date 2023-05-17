@@ -1,6 +1,8 @@
 import { ApolloClient, InMemoryCache } from "@apollo/client";
 
+import * as Constant from "./constant";
+
 export const client = new ApolloClient({
-  uri: "https://zaiste.staging.saleor.cloud/graphql/",
+  uri: Constant.SaleorURL,
   cache: new InMemoryCache(),
 });
